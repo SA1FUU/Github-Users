@@ -12,7 +12,7 @@
         display: flex;
         text-align: center;
         flex-direction: column;
-        background-image: linear-gradient(85deg, cyan, blueviolet);
+        background-image: linear-gradient(85deg, rgb(32, 134, 134), rgb(88, 45, 129));
     }
 
     h1 {
@@ -22,7 +22,7 @@
     }
 
     .search-div {
-        background-image: linear-gradient(45deg, cyan, blueviolet);
+        background-image: linear-gradient(45deg, rgb(55, 147, 147), rgb(117, 60, 169));
         position: sticky;
         top: 0;
         width: 100%;
@@ -36,35 +36,40 @@
     }
 
     .search-div input {
-        color: blueviolet;
+        color: #fff;
+        background-color: rgb(23, 133, 134);
         padding: 10px 35px;
         border: none;
         outline: none;
-        box-shadow: 1px 1px 10px #fff;
+        transition: 0.3s ease;
     }
 
     .search-div input::placeholder {
         font-weight: 400;
+        color: #fff;
         opacity: 0.5;
         letter-spacing: 1px;
     }
 
     .search-div button {
         letter-spacing: 1px;
-        background-color: #fff;
-        color: blueviolet;
+        background-color: rgb(23, 133, 134);
+        color: #fff;
+        opacity: 0.5;
         cursor: pointer;
         padding: 10px 15px;
         border: none;
         outline: none;
+    }
+
+    .search-div input:hover {
+        box-shadow: 1px 1px 10px #ece9e9;
+    }
+
+    .search-div button:hover{
         box-shadow: 1px 1px 10px #fff;
     }
-
-    .search-div button:hover,
-    .search-div input:hover {
-        background-color: #ebe7e7;
-    }
-
+    
     .users-container {
         gap: 25px;
         width: 100%;
@@ -91,8 +96,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border-right: 1px dotted #fff;
-        text-align: start;
         gap: 15px;
         color: #fff;
     }
@@ -125,18 +128,22 @@
 
     .followers {
         width: 100%;
-        text-align: start;
+        text-align: center;
         padding: 10px 2px;
         box-shadow: 1px 1px 10px rgb(100, 200, 200);
         font-size: 15px;
+        text-decoration: none;
+        color: #fff;
     }
 
     .following {
         width: 100%;
-        text-align: start;
+        text-align: center;
         padding: 10px 2px;
         box-shadow: 1px 1px 10px rgb(100, 200, 200);
         font-size: 15px;
+        text-decoration: none;
+        color: #fff;
     }
 
     b {
@@ -148,12 +155,14 @@
         text-align: center;
         box-shadow: 1px 1px 10px rgb(100, 200, 200);
         padding: 10px 2px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
     }
 
     #visit-github {
         padding: 10px 15px;
         width: 100%;
-        text-shadow: 1px 1px 10px cyan;
         text-align: center;
         border: none;
         box-shadow: 1px 1px 10px rgb(100, 200, 200);
